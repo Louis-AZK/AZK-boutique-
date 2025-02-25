@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZK - Boutique Officielle</title>
+    <style>
+        /* Arrière-plan rouge */
+        body {
+            background: red;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: red;
+            background: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Produits */
+        .products {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 50px;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AZK</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Nouvelle Collection Disponible !</h2>
+        <a href="boutique.html" class="btn">Découvrir</a>
+    </section>
+
+    <section class="products">
+        <h2>Nos Produits</h2>
+
+        <!-- T-SHIRT 1 -->
+        <div class="product">
+            <img src="tshirt1.jpg" alt="T-shirt AZK">
+            <p>T-shirt AZK - 14,99€</p>
+            <p><em>Disponible en précommande</em></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <label for="size1">Taille :</label>
+                <select name="os0" id="size1" required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="bruguiere.alex@gmail.com">
+                <input type="hidden" name="item_name" value="T-shirt AZK">
+                <input type="hidden" name="amount" value="14.99">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="submit" value="Précommander avec PayPal">
+            </form>
+        </div>
+
+        <!-- T-SHIRT 2 -->
+        <div class="product">
+            <img src="tshirt2.jpg" alt="T-shirt droit AZK">
+            <p>T-shirt droit AZK - 14,99€</p>
+            <p><em>Disponible en précommande</em></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <label for="size2">Taille :</label>
+                <select name="os0" id="size2" required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="bruguiere.alex@gmail.com">
+                <input type="hidden" name="item_name" value="T-shirt droit AZK">
+                <input type="hidden" name="amount" value="14.99">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="submit" value="Précommander avec PayPal">
+            </form>
+        </div>
+
+        <!-- T-SHIRT 3 -->
+        <div class="product">
+            <img src="tshirt3.jpg" alt="T-shirt Oversize AZK">
+            <p>T-shirt Oversize AZK - 16,99€</p>
+            <p><em>Disponible en précommande</em></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <label for="size3">Taille :</label>
+                <select name="os0" id="size3" required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="bruguiere.alex@gmail.com">
+                <input type="hidden" name="item_name" value="T-shirt Oversize AZK">
+                <input type="hidden" name="amount" value="16.99">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="submit" value="Précommander avec PayPal">
+            </form>
+        </div>
+
+        <!-- T-SHIRT 4 -->
+        <div class="product">
+            <img src="tshirt5.jpg" alt="T-shirt AZK 34">
+            <p><strong>T-shirt AZK 34</strong> - 24,99€</p>
+            <p><em>Disponible en précommande</em></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <label for="size5">Taille :</label>
+                <select name="os0" id="size5" required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="bruguiere.alex@gmail.com">
+                <input type="hidden" name="item_name" value="T-shirt AZK 34">
+                <input type="hidden" name="amount" value="24.99">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="submit" value="Précommander avec PayPal">
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2025 AZK - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
